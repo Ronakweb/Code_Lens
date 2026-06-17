@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-multipart
+requests
+radon
+langchain
+langchain-community
+langchain-google-genai
+faiss-cpu
+tiktoken
+google-genai>=1.0.0
+sqlalchemy>=2.0.0
+
+
