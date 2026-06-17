@@ -166,7 +166,7 @@ class CacheEntry(Base):
 class DatabaseManager:
     """Manages database connections and sessions."""
     
-    def __init__(self, database_url: str = "sqlite:///./code_mri.db"):
+    def __init__(self, database_url: str = "sqlite:///./code_lens.db"):
         """
         Initialize database manager.
         

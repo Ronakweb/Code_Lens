@@ -1,4 +1,4 @@
-# Code MRI - Open Source Onboarding Engine
+# Code Lens - Open Source Onboarding Engine
 
 <div align="center">
 
@@ -36,10 +36,10 @@
 ## 🎯 Project Overview
 
 ### Title
-**Code MRI** - An Intelligent Static Analysis Tool for Open Source Onboarding
+**Code Lens** - An Intelligent Static Analysis Tool for Open Source Onboarding
 
 ### Abstract
-Code MRI is an AI-powered platform that provides automated "health checks" and interactive explanations of any public GitHub repository without executing code. It bridges the gap between raw code and human understanding, making it the safest and fastest way to explore unknown software.
+Code Lens is an AI-powered platform that provides automated "health checks" and interactive explanations of any public GitHub repository without executing code. It bridges the gap between raw code and human understanding, making it the safest and fastest way to explore unknown software.
 
 ### Problem Statement
 
@@ -337,8 +337,8 @@ Bot: "The payment gateway is handled in src/services/payment.py
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/code-mri.git
-cd code-mri
+git clone https://github.com/yourusername/code-lens.git
+cd code-lens
 
 # 2. Set up environment variables
 cp .env.example .env
@@ -405,7 +405,7 @@ GOOGLE_API_KEY=your_api_key_here
 
 # Backend Settings
 TEMP_DIR=temp_clones
-PROJECT_NAME=Code MRI
+PROJECT_NAME=Code Lens
 
 # Frontend URL (for CORS)
 ALLOWED_ORIGINS=["http://localhost:3000"]
@@ -796,11 +796,11 @@ async def chat_endpoint():
 
 ## 🎓 Conclusion
 
-Code MRI represents a paradigm shift in how developers approach open-source software. By treating code as analyzable data rather than executable instructions, we've created a safe, fast, and intelligent onboarding experience that democratizes access to complex codebases.
+Code Lens represents a paradigm shift in how developers approach open-source software. By treating code as analyzable data rather than executable instructions, we've created a safe, fast, and intelligent onboarding experience that democratizes access to complex codebases.
 
-### Why Code MRI Matters
+### Why Code Lens Matters
 
-In a world where software complexity grows exponentially, the ability to quickly understand and assess code quality is no longer a luxury—it's a necessity. Code MRI bridges the critical gap between curiosity and contribution, transforming the daunting task of exploring unfamiliar code into an intuitive, AI-guided journey.
+In a world where software complexity grows exponentially, the ability to quickly understand and assess code quality is no longer a luxury—it's a necessity. Code Lens bridges the critical gap between curiosity and contribution, transforming the daunting task of exploring unfamiliar code into an intuitive, AI-guided journey.
 
 ### The Vision
 
@@ -812,7 +812,7 @@ We envision a future where:
 
 ### Join the Movement
 
-Code MRI is more than a tool—it's a movement towards making open-source software more accessible, maintainable, and secure. Whether you're a first-time contributor looking for your next project, a maintainer seeking to reduce onboarding friction, or a team lead evaluating dependencies, Code MRI empowers you with the intelligence you need.
+Code Lens is more than a tool—it's a movement towards making open-source software more accessible, maintainable, and secure. Whether you're a first-time contributor looking for your next project, a maintainer seeking to reduce onboarding friction, or a team lead evaluating dependencies, Code Lens empowers you with the intelligence you need.
 
 **Ready to take your code comprehension to the next level?**
 
@@ -825,7 +825,7 @@ Code MRI is more than a tool—it's a movement towards making open-source softwa
 **Transform how you understand code—one repository at a time.**
 
 [![Get Started](https://img.shields.io/badge/Get%20Started-Analyze%20Now-blue?style=for-the-badge)](http://localhost:3000)
-[![Star on GitHub](https://img.shields.io/badge/Star%20on-GitHub-yellow?style=for-the-badge&logo=github)](https://github.com/yourusername/code-mri)
+[![Star on GitHub](https://img.shields.io/badge/Star%20on-GitHub-yellow?style=for-the-badge&logo=github)](https://github.com/yourusername/code-lens)
 
 ---
 
@@ -833,6 +833,6 @@ Code MRI is more than a tool—it's a movement towards making open-source softwa
 
 *"Making open source accessible, one scan at a time."*
 
-[⬆ Back to Top](#code-mri---open-source-onboarding-engine)
+[⬆ Back to Top](#code-lens---open-source-onboarding-engine)
 
 </div>

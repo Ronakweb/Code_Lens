@@ -5,7 +5,7 @@ This guide walks you through deploying your FastAPI backend and Next.js frontend
 ## 📁 Project Structure
 
 ```
-Code-MRI/
+Code-Lens/
 ├── backend/                 # FastAPI application
 │   ├── main.py
 │   ├── requirements.txt
@@ -27,7 +27,7 @@ Code-MRI/
 1. **Go to Render Dashboard** → **New** → **Web Service**
 2. **Connect your GitHub repository**
 3. **Configure the service:**
-   - **Name**: `code-mri-backend`
+   - **Name**: `code-lens-backend`
    - **Root Directory**: `backend`
    - **Runtime**: `Docker`
    - **Region**: Choose closest to your users
@@ -47,7 +47,7 @@ Code-MRI/
 
 ### 🔗 Your backend will be available at:
 ```
-https://code-mri-backend.onrender.com
+https://code-lens-backend.onrender.com
 ```
 
 ## 🎨 2. Deploy Next.js Frontend
@@ -57,14 +57,14 @@ https://code-mri-backend.onrender.com
 1. **Go to Render Dashboard** → **New** → **Static Site**
 2. **Connect your GitHub repository**
 3. **Configure the site:**
-   - **Name**: `code-mri-frontend`
+   - **Name**: `code-lens-frontend`
    - **Root Directory**: `frontend`
    - **Build Command**: `npm install && npm run build`
    - **Publish Directory**: `.next` (for Next.js) or `out` (for static export)
 
 4. **Environment Variables**:
    ```
-   NEXT_PUBLIC_API_URL=https://code-mri-backend.onrender.com
+   NEXT_PUBLIC_API_URL=https://code-lens-backend.onrender.com
    NEXT_TELEMETRY_DISABLED=1
    ```
 
@@ -78,7 +78,7 @@ https://code-mri-backend.onrender.com
 
 ### 🔗 Your frontend will be available at:
 ```
-https://code-mri-frontend.onrender.com
+https://code-lens-frontend.onrender.com
 ```
 
 ## 🔄 3. Connect Frontend ↔ Backend
@@ -89,7 +89,7 @@ After deploying, update your backend's CORS origins:
 
 1. **In your `.env` file or Render environment variables:**
    ```
-   ALLOWED_ORIGINS=["https://code-mri-frontend.onrender.com"]
+   ALLOWED_ORIGINS=["https://code-lens-frontend.onrender.com"]
    ```
 
 2. **Redeploy your backend service**
@@ -98,7 +98,7 @@ After deploying, update your backend's CORS origins:
 
 1. **In Render dashboard, update the frontend environment variable:**
    ```
-   NEXT_PUBLIC_API_URL=https://code-mri-backend.onrender.com
+   NEXT_PUBLIC_API_URL=https://code-lens-backend.onrender.com
    ```
 
 2. **Redeploy your frontend service**
@@ -144,10 +144,10 @@ After deploying, update your backend's CORS origins:
 ### Testing Deployment
 ```bash
 # Test backend health
-curl https://code-mri-backend.onrender.com/health
+curl https://code-lens-backend.onrender.com/health
 
 # Test frontend
-curl https://code-mri-frontend.onrender.com
+curl https://code-lens-frontend.onrender.com
 ```
 
 ## 🔐 Security Notes

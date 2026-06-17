@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Code MRI platform now includes a comprehensive data persistence and synchronization system that stores repository intelligence data in a SQLite database. This system provides:
+The Code Lens platform now includes a comprehensive data persistence and synchronization system that stores repository intelligence data in a SQLite database. This system provides:
 
 - **Persistent storage** for repository metadata, branch information, and analysis results
 - **Conflict resolution** for concurrent updates
@@ -356,7 +356,7 @@ auto_refresh.stop()
 
 By default, the system uses SQLite with the database file stored in the temp directory:
 ```
-{TEMP_DIR}/code_mri.db
+{TEMP_DIR}/code_lens.db
 ```
 
 To use a different database, pass a custom database URL:

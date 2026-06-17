@@ -200,14 +200,14 @@ class ChatRequest(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"status": "online", "service": "Code MRI Backend"}
+    return {"status": "online", "service": "Code Lens Backend"}
 
 @app.get("/health")
 def health_check():
     """Health check endpoint for Render and monitoring services"""
     return {
         "status": "healthy",
-        "service": "Code MRI Backend",
+        "service": "Code Lens Backend",
         "version": "1.0.0",
         "uptime": time.time() - startup_time
     }

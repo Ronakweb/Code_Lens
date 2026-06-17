@@ -1,7 +1,7 @@
 services:
   # Backend API Service
   - type: web
-    name: code-mri-backend
+    name: code-lens-backend
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
@@ -10,17 +10,17 @@ services:
       - key: GOOGLE_API_KEY
         sync: false  # Set this manually in Render dashboard
       - key: ALLOWED_ORIGINS
-        value: '["https://code-mri-frontend.onrender.com"]'
+        value: '["https://code-lens-frontend.onrender.com"]'
     
   # Frontend Static Site
   - type: web
-    name: code-mri-frontend
+    name: code-lens-frontend
     env: static
     buildCommand: npm install && npm run build && npm run export
     staticPublishPath: ./out
     rootDir: ./frontend
     envVars:
       - key: NEXT_PUBLIC_API_URL
-        value: https://code-mri-backend.onrender.com
+        value: https://code-lens-backend.onrender.com
       - key: NEXT_TELEMETRY_DISABLED
         value: "1"

@@ -423,7 +423,7 @@ export default function ReportPage({ params }: { params: { id: string } }) {
                                 <div className="h-8 w-8 rounded-lg bg-primary/20 flex items-center justify-center">
                                     <Activity className="h-5 w-5 text-primary" />
                                 </div>
-                                Code MRI <span className="text-muted-foreground font-normal text-sm ml-2">/ Report / {params.id.substring(0, 8)}</span>
+                                Code Lens <span className="text-muted-foreground font-normal text-sm ml-2">/ Report / {params.id.substring(0, 8)}</span>
                             </div>
                             
                             <div className="flex items-center gap-4">

@@ -29,7 +29,7 @@ class DataPersistenceService:
         if database_url is None:
             # Default to SQLite in the temp directory
             os.makedirs(settings.TEMP_DIR, exist_ok=True)
-            db_path = os.path.join(settings.TEMP_DIR, "code_mri.db")
+            db_path = os.path.join(settings.TEMP_DIR, "code_lens.db")
             database_url = f"sqlite:///{db_path}"
         
         self.db_manager = DatabaseManager(database_url)

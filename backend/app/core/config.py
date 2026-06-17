@@ -8,7 +8,7 @@ ROOT_DIR = Path(__file__).resolve().parent.parent.parent.parent
 ENV_FILE = ROOT_DIR / ".env"
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "Code MRI"
+    PROJECT_NAME: str = "Code Lens"
     ALLOWED_ORIGINS: List[str] = [
         "http://localhost:3000",  # Local development
         "https://localhost:3000", # Local HTTPS

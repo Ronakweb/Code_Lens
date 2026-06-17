@@ -115,7 +115,7 @@ export default function Home() {
                         </div>
                         
                         <h1 className="text-6xl md:text-8xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white via-white/90 to-white/50 pb-2">
-                            Code MRI
+                            Code Lens
                         </h1>
                         
                         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
